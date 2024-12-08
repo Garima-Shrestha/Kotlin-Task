@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RadioActivity">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioDownload"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunset" />
+
+        <RadioButton
+            android:id="@+id/radioAbc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Night View" />
+
+        <RadioButton
+            android:id="@+id/radioEfg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Greenery" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageRadio"
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/download" />
+
+
+</LinearLayout>
