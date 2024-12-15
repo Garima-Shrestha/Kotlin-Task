@@ -29,6 +29,9 @@ class ButtonActivity : AppCompatActivity() {
             } else if (pass.isEmpty()) {
                 binding.password.error = "Password can't be empty"
             } else {
+                if(binding.checkBox.isChecked){
+
+                }
                 val intent = Intent(this@ButtonActivity, DestinationActivity::class.java)
                 intent.putExtra("username", user)
                 intent.putExtra("password", pass)
